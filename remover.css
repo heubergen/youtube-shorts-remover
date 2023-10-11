@@ -1,6 +1,9 @@
-a[href^="/shorts/"],
 ytd-rich-section-renderer,
 ytd-reel-shelf-renderer.ytd-item-section-renderer,
 span[aria-label="Shorts"] {
+    display: none !important;
+}
+
+ytd-video-renderer.ytd-item-section-renderer:has(a[href^="/shorts"]) {
     display: none !important;
 }
